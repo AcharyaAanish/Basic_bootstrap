@@ -1,0 +1,77 @@
+.footer{
+    font-size: 1.3rem;
+    a{
+        @include animate(color);
+        color:$dark-blue;
+
+        &:hover{
+            color:$orange;
+
+        }
+    }
+    .footer-links{
+        @extend %listreset;
+        li{
+            &.active{
+                a{
+                    color:$orange;
+                }
+            }
+        }
+    }
+}
+
+.top-footer{
+    .list-items,
+    .news-list{
+        @extend %listreset;
+        font-size:10px;
+
+        li{
+            &:not(:last-child){
+            border-bottom: 1px solid rgba($white,0.05)
+            }
+        }
+
+        a{
+            color:$white;
+
+            &:hover{
+                color:$orange;
+            }
+        }
+    }
+
+    .list-items{
+        li{
+            &:before{
+                content:$icon-mail;
+                display: inline-block;
+                vertical-align: top;
+                font-family: icomoon;
+                padding-right:5px;
+            }
+        }
+    }
+    
+    .news-list{
+
+        a{
+            display:block;
+            padding-left:70px;
+            position: relative;
+        }
+        .thumbnail{
+        width:64px;
+        height:55px;
+        background: red;
+        position: absolute;
+        top:0;
+        left:0;
+    }
+    .text,
+    time{
+        display:block;
+    }
+}
+}

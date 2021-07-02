@@ -1,0 +1,22 @@
+.contact-list{
+    @extend %listreset;
+}
+#searchModal{
+    .input-group{
+        flex:1;
+       
+    .form-control{
+        padding: $input-padding-y $input-padding-x;
+        font-size: $input-font-size; 
+    }
+    &:focus{
+        box-shadow: $input-box-shadow;
+    }
+        
+    }
+
+    .btn{
+        flex-basis:100px;
+        max-width:100px;
+    }
+}

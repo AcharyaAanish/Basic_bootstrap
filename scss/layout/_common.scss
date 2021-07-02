@@ -1,0 +1,185 @@
+.banner-block{
+    background-size: cover;
+    background-position: 50% 50%;
+    background-repeat: no-repeat;
+    padding: 80px 0;
+
+    &:after{
+        content:'';
+        display: block;
+        clear: both;
+        height:540px;
+    }
+}
+
+.services{
+    padding:120px 0;
+
+        .text-wrap{
+            margin-bottom: 80px;
+        }
+}
+.card{
+    .img-wrap{
+        background-size: cover;
+        background-position: 50% 50%;
+        background-repeat: no-repeat;
+        height: 220px;
+    }
+  
+}
+
+.style{
+    position: relative;
+    display:inline;
+    vertical-align: top;
+
+    &:after{
+        @include animate(opacity width);
+        content:'';
+        position:absolute;
+        bottom:0;
+        left:0;
+        width:0;
+        opacity: 0;
+        visibility: hidden;
+        height:1px;
+        background: $orange;
+    }
+}
+.card{
+    &:hover{
+        h3{
+            color:$orange;
+        }
+
+        .style{
+            color:$orange;
+            &:after{
+                width:100%;
+                opacity:1;
+                visibility: visible;
+            }
+        }
+    }
+}
+.nav-tabs{
+    .style{
+        &:hover{
+            &:after{
+                opacity:1;
+                visibility:visible;
+                width:100%;
+            }
+        }
+    }
+}
+.tab-content{
+    
+    .three-columns{
+        @extend %listreset;
+        >li{
+				width: 33.33%;
+        }
+    }
+}
+.img-wrap{
+    position: relative;
+	 padding-top:60%;
+	 overflow: hidden;
+	 
+	 &:hover{
+		 .img{
+			 transform: scale(0.99);
+		 }
+		 .caption-wrap{
+			 transform: translateY(0);
+			 opacity: 1;
+			 visibility: visible;
+		 }
+	 }
+}
+.img{
+	@include animate(transform);
+    position: absolute;
+    top:0;
+    left:0;
+    right:0;
+	 bottom:0;
+	 transform: scale(1.2);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: 50% 50%;
+    z-index: -1;
+}
+
+.caption-wrap{
+	@include animate(transform opacity);
+	position: absolute;
+	 background-color: rgba($white,0.87);
+	 bottom:0;
+	 left:0;
+	 right:0;
+	 z-index:2;
+	 transform:translateY(25px);
+	 opacity: 0;
+	 visibility: hidden;
+}
+.function-list{
+	@extend %listreset;
+	
+	a{
+		width:45px;
+		height: 40px;
+		background: $orange;
+		color: $white;
+	}
+	
+}
+
+.title{
+	display:inline-block;
+	vertical-align: top;
+	position: relative;
+
+	&:after{
+		content:'';
+		position: absolute;
+		bottom: 0;
+		left:0;
+		width:60px;
+		height:2px;
+		background: $blue-400;
+	}
+}
+.feedback-block{
+    padding: 50px 0;
+
+    @include media('>=desktop'){
+        padding: 120px 0;
+    }
+
+    .feedback-details{
+        background: $gray-600;
+    }
+    
+    blockquote{
+        flex:1;
+        q{
+            quotes:none;
+           
+    }
+    
+}
+.thumbnail{
+    flex-basis: 138px;
+    max-width:138px;
+    background-position: 50% 50%;
+    background-repeat: no-repeat;
+    background-size: cover;
+    }
+}
+
+.font-style-normal{
+    font-style: normal !important;
+}

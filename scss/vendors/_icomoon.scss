@@ -1,0 +1,86 @@
+
+@font-face {
+    font-family: '#{$icomoon-font-family}';
+    src:  url('#{$icomoon-font-path}/#{$icomoon-font-family}.eot?f0k9ke');
+    src:  url('#{$icomoon-font-path}/#{$icomoon-font-family}.eot?f0k9ke#iefix') format('embedded-opentype'),
+      url('#{$icomoon-font-path}/#{$icomoon-font-family}.ttf?f0k9ke') format('truetype'),
+      url('#{$icomoon-font-path}/#{$icomoon-font-family}.woff?f0k9ke') format('woff'),
+      url('#{$icomoon-font-path}/#{$icomoon-font-family}.svg?f0k9ke##{$icomoon-font-family}') format('svg');
+    font-weight: normal;
+    font-style: normal;
+    font-display: block;
+  }
+  
+  [class^="icon-"], [class*=" icon-"] {
+    /* use !important to prevent issues with browser extensions that change fonts */
+    font-family: '#{$icomoon-font-family}' !important;
+    // speak: none;
+    font-style: normal;
+    font-weight: normal;
+    font-variant: normal;
+    text-transform: none;
+    line-height: 1;
+  
+    /* Better Font Rendering =========== */
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+  }
+  
+  .icon-calendar {
+    &:before {
+      content: $icon-calendar; 
+    }
+  }
+  .icon-date {
+    &:before {
+      content: $icon-date; 
+    }
+  }
+  .icon-schedule {
+    &:before {
+      content: $icon-schedule; 
+    }
+  }
+  .icon-location {
+    &:before {
+      content: $icon-location; 
+    }
+  }
+  .icon-mail {
+    &:before {
+      content: $icon-mail; 
+    }
+  }
+  .icon-skype {
+    &:before {
+      content: $icon-skype;     
+      color: #00aff0;
+    }
+  }
+  .icon-facebook {
+    &:before {
+      content: $icon-facebook; 
+    }
+  }
+  .icon-play {
+    &:before {
+      content: $icon-play; 
+    }
+  }
+  .icon-call {
+    &:before {
+      content: $icon-call; 
+    }
+  }
+  .icon-search {
+    &:before {
+      content: $icon-search; 
+    }
+  }
+  .icon-link {
+    &:before {
+      content: $icon-link; 
+    }
+  }
+  
+  
